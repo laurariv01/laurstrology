@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="card-group" >
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1515890435782-59a5bb6ec191" class="card-img-top" alt="..." >
+        <div class="card-body">
+          <h5 class="card-title">About Compatability</h5>
+          <p class="card-text">Just to be perfectly clear, any relationship can work. All relationships will require effort. Compatability doesn't say you can't be with someone just because of their sign. Love whoever you want! Compatability readings show us that some relationships will require more effort than others. That's all. It will show you what you can work on, and how you may communicate better with your love. Compatability reading is a tool for navigating your relationship. Enjoy!</p>
+        </div>
+        <div class="card-footer">
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://i.postimg.cc/R0jH7MTW/compat.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Click on your sign to see who you are compatible with!</h5>
+          <a href="{{ url_for('ariescompat') }}" class="btn btn-outline-danger">ARIES: March 21- April 19</a> 
+          <a href="{{ url_for('cancercompat') }}"  class="btn btn-outline-info">CANCER: June 21- July 22</a>     
+          <a href="{{ url_for('aquariuscompat') }}" class="btn btn-outline-warning">AQUARIUS: January 20- Fenruary 18</a>
+          <a href="{{ url_for('tauruscompat') }}" class="btn btn-outline-success">TAURUS: April 20- May 20</a> 
+          <a href="{{ url_for('sagittariuscompat') }}"  class="btn btn-outline-danger">SAGITTARIUS: November 22-December 21</a> 
+          <a href="{{ url_for('piscescompat') }}" class="btn btn-outline-info">PISCES: February 19- March 20 </a> 
+          <a href="{{ url_for('geminicompat') }}"  class="btn btn-outline-warning">GEMINI: May 21- June 21</a> 
+          <a href="{{ url_for('virgocompat') }}"  class="btn btn-outline-success">VIRGO: August 23- September 22</a> 
+          <a href="{{ url_for('leocompat') }}" class="btn btn-outline-danger">LEO: July 23- August 22</a> 
+          <a href="{{ url_for('scorpiocompat') }}" class="btn btn-outline-info">SCORPIO: October 23- Novemeber 21</a>     
+          <a href="{{ url_for('libracompat') }}" class="btn btn-outline-warning">LIBRA: September 23- October 22</a>
+          <a href="{{ url_for('capricorncompat') }}" class="btn btn-outline-success">CAPRICORN: December 22- January 19</a>  
+      
+        </div>
+        <div class="card-footer">
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1513279922550-250c2129b13a" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">“People think a soul mate is your perfect fit, and that's what everyone wants. But a true soul mate is a mirror, the person who shows you everything that is holding you back, the person who brings you to your own attention so you can change your life.
+
+              A true soul mate is probably the most important person you'll ever meet, because they tear down your walls and smack you awake. But to live with a soul mate forever? Nah. Too painful. Soul mates, they come into your life just to reveal another layer of yourself to you, and then leave.
+              
+              A soul mates purpose is to shake you up, tear apart your ego a little bit, show you your obstacles and addictions, break your heart open so new light can get in, make you so desperate and out of control that you have to transform your life, then introduce you to your spiritual master...”
+              ― Elizabeth Gilbert, Eat, Pray, Love</p>
+        </div>
+        <div class="card-footer">
+        </div>
+      </div>
+    </div>   
+
+
+
+{% endblock content %}

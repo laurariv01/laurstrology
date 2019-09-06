@@ -1,0 +1,337 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+    <div class="card bg-dark text-white">
+        <img src="https://i.postimg.cc/jdWf4NFD/zodiac-signs.png" class="card-img" alt="...">
+        <div class="card-img-overlay">
+        </div>
+      </div>
+
+<h5 class="selecttest">Select your month and day of birth to find out what your sign is!</h5>
+
+      <form>
+          <div class="form-row align-items-center">
+            <div class="col-auto my-1">
+              <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+              <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                <option selected>Month</option>
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+              </select>
+            </div>
+            <div class="col-auto my-1">
+
+            </div>
+            <form>
+                <div class="form-row align-items-center">
+                  <div class="col-auto my-1">
+                    <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                      <option selected>Day</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="3">4</option>
+                      <option value="3">5</option>
+                      <option value="3">6</option>
+                      <option value="3">7</option>
+                      <option value="3">8</option>
+                      <option value="3">9</option>
+                      <option value="3">10</option>
+                      <option value="3">11</option>
+                      <option value="3">12</option>
+                      <option value="3">13</option>
+                      <option value="3">14</option>
+                      <option value="3">15</option>
+                      <option value="3">16</option>
+                      <option value="3">17</option>
+                      <option value="3">18</option>
+                      <option value="3">19</option>
+                      <option value="3">20</option>
+                      <option value="3">21</option>
+                      <option value="3">22</option>
+                      <option value="3">23</option>
+                      <option value="3">24</option>
+                      <option value="3">25</option>
+                      <option value="3">26</option>
+                      <option value="3">27</option>
+                      <option value="3">28</option>
+                      <option value="3">29</option>
+                      <option value="3">30</option>
+                      <option value="3">31</option>
+                    </select>
+                  </div>
+                  <div class="col-auto my-1">
+                  </div>
+                  <div class="col-auto my-1">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                  </div>
+                </div>
+              </form>
+          </div>
+        </form>
+        
+
+        <div class="card-deck">
+            <div class="card text-white bg-secondary mb-3">
+              <img src="https://images.unsplash.com/photo-1496483353456-90997957cf99" class="card-img-top" alt="...">
+              <div class="card-body">
+              </div>
+            </div>
+            <div class="card text-white bg-secondary mb-3">
+              <img src="https://i.postimg.cc/7ZNHjDTR/aries.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <a href="{{ url_for('aries') }}" class="btn btn-secondary btn-lg btn-block">ARIES: March 21- April 19</a>
+              </div>
+            </div>
+            <div class="card text-white bg-secondary mb-3">
+              <img src="https://i.postimg.cc/Kv77pqmY/sagittarius.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <a href="{{ url_for('sagittarius') }}" class="btn btn-secondary btn-lg btn-block">SAGITTARIUS: November 22-December 21</a>
+              </div>
+            </div>
+            <div class="card text-white bg-secondary mb-3">
+                <img src="https://i.postimg.cc/Qdk65NF0/leo.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="{{ url_for('leo') }}" class="btn btn-secondary btn-lg btn-block">LEO: July 23- August 22</a>
+                </div>
+          </div>
+
+
+          <div class="card-deck">
+              <div class="card text-white bg-secondary mb-3">
+                <img src="https://images.unsplash.com/photo-1555412654-72a95a495858" class="card-img-top" alt="...">
+                <div class="card-body">
+                </div>
+              </div>
+              <div class="card text-white bg-secondary mb-3">
+                <img src="https://i.postimg.cc/wBzjf2T9/cancer.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="{{ url_for('cancer') }}" class="btn btn-secondary btn-lg btn-block">CANCER: June 21- July 22</a>
+                </div>
+              </div>
+              <div class="card text-white bg-secondary mb-3">
+                <img src="https://i.postimg.cc/Xq5v1zF7/pisces.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="{{ url_for('pisces') }}" class="btn btn-secondary btn-lg btn-block">PISCES: February 19- March 20</a>
+                </div>
+              </div>
+              <div class="card text-white bg-secondary mb-3">
+                  <img src="https://i.postimg.cc/RCdpNZnd/scorpio.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <a href="{{ url_for('scorpio') }}" class="btn btn-secondary btn-lg btn-block">SCORPIO: October 23- Novemeber 21</a>
+                  </div>
+            </div>
+
+            <div class="card-deck">
+                <div class="card text-white bg-secondary mb-3">
+                  <img src="https://images.unsplash.com/photo-1476254592636-2a8e23b256fe" class="card-img-top" alt="...">
+                  <div class="card-body">
+                  </div>
+                </div>
+                <div class="card text-white bg-secondary mb-3">
+                  <img src="https://i.postimg.cc/KjWnBwbG/aquarius.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <a href="{{ url_for('aquarius') }}" class="btn btn-secondary btn-lg btn-block">AQUARIUS: January 20- Fenruary 18 </a>
+                  </div>
+                </div>
+                <div class="card text-white bg-secondary mb-3">
+                  <img src="https://i.postimg.cc/xChvbBn0/gemini.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <a href="{{ url_for('gemini') }}" class="btn btn-secondary btn-lg btn-block">GEMINI: May 21- June 21</a>
+                  </div>
+                </div>
+                <div class="card text-white bg-secondary mb-3">
+                    <img src="https://i.postimg.cc/J08hgQQN/libra.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <a href="{{ url_for('libra') }}" class="btn btn-secondary btn-lg btn-block">LIBRA: September 23- October 22</a>
+                    </div>
+              </div>
+
+              <div class="card-deck">
+            <div class="card text-white bg-secondary mb-3">
+              <img src="https://images.unsplash.com/photo-1549488497-678a1c4114c2" class="card-img-top" alt="...">
+              <div class="card-body">
+              </div>
+            </div>
+            <div class="card text-white bg-secondary mb-3">
+              <img src="https://i.postimg.cc/HnSC20vs/taurus.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <a href="{{ url_for('taurus') }}" class="btn btn-secondary btn-lg btn-block">TAURUS: April 20- May 20</a> 
+              </div>
+            </div>
+            <div class="card text-white bg-secondary mb-3">
+              <img src="https://i.postimg.cc/DZyjc99L/virgo.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <a href="{{ url_for('virgo') }}" class="btn btn-secondary btn-lg btn-block">VIRGO: August 23- September 22</a> 
+              </div>
+            </div>
+            <div class="card text-white bg-secondary mb-3">
+                <img src="https://i.postimg.cc/Y9hV7cdk/capricorn.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="{{ url_for('capricorn') }}" class="btn btn-secondary btn-lg btn-block">CAPRICORN: December 22- January 19</a>
+                </div>
+          </div>
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+    <div class="card bg-dark text-white">
+        <img src="https://i.postimg.cc/jdWf4NFD/zodiac-signs.png" class="card-img" alt="...">
+        <div class="card-img-overlay">
+        </div>
+      </div>
+
+
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+
+            <div class="card mb-3" style="max-width: 10000px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="https://images.unsplash.com/photo-1509647648544-a3e09b751ad6" class="card-img" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body" >
+                        <a href="{{ url_for('aries') }}">
+                            <div class="card">
+                              <img class="card-img-top" src="https://i.postimg.cc/bYMqrtF0/aries.png" alt="Card image cap">
+                              </div>
+                          
+                          </a>
+                          <a href="{{ url_for('sagittarius') }}">
+                              <div class="card" style="width: 15.9rem; display: inline-block">
+                                <img class="card-img-top" src="https://i.postimg.cc/0jqRGYgh/sagittarius.png" alt="Card image cap">
+                  
+                                </div>
+                               
+                            </a>
+                            <a href="{{ url_for('leo') }}">
+                                <div class="card" style="width: 15.9rem; display: inline-block">
+                                  <img class="card-img-top" src="https://i.postimg.cc/L6NwhKsc/leo.png" alt="Card image cap">
+                                </div>
+                              </a>
+                              
+                  
+                                    <a href="{{ url_for('cancer') }}">
+                                        <div class="card" style="width: 15.7rem; display: inline-block">
+                                          <img class="card-img-top" src="https://i.postimg.cc/brdbTtQH/cancer.png" alt="Card image cap">
+                                          </div>
+                                        </div>
+                                      </a>
+                                      
+                                      <a href="{{ url_for('pisces') }}">
+                                          <div class="card" style="width: 15.7rem; display: inline-block">
+                                            <img class="card-img-top" src="https://i.postimg.cc/fTft95nn/pisces.png" alt="Card image cap">
+                                            </div>
+                                            
+                                        </a>
+                                        <a href="{{ url_for('scorpio') }}">
+                                            <div class="card" style="width: 15.7rem; display: inline-block">
+                                              <img class="card-img-top" src="https://i.postimg.cc/dtsQzYXp/scorpio.png" alt="Card image cap">
+                                              </div>
+                                                
+                                          </a>
+                                         
+                  
+                                                <a href="{{ url_for('aquarius') }}">
+                                                    <div class="card" style="width: 15.7rem; display: inline-block">
+                                                      <img class="card-img-top" src="https://i.postimg.cc/jjQFVGB3/aquarius.png" alt="Card image cap">
+                                                      </div>
+                                                      
+                                                  </a>
+                                                  <a href="{{ url_for('gemini') }}">
+                                                      <div class="card" style="width: 15.7rem; display: inline-block">
+                                                        <img class="card-img-top" src="https://i.postimg.cc/1X4Cq4Xb/gemini.png" alt="Card image cap">
+                                                        </div>
+                                                      </div>
+                                                    </a>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                                    <a href="{{ url_for('libra') }}">
+                                                        <div class="card" style="width: 15.7rem; display: inline-block">
+                                                          <img class="card-img-top" src="https://i.postimg.cc/MTHbsNwQ/libra.png" alt="Card image cap">
+                                                          </div>
+                                                      </a>
+                                                    </div>
+                                        </div>
+                                          <a href="{{ url_for('taurus') }}">
+                                              <div class="card" style="width: 15rem; display: inline-block">
+                                                <img class="card-img-top" src="https://i.postimg.cc/C51hnCjY/taurus.png" alt="Card image cap">
+                                                </div>
+                                               </div>
+                                            </a>
+
+                                            </div>
+                                            <a href="{{ url_for('virgo') }}">
+                                                <div class="card" style="width: 15.7rem; display: inline-block">
+                                                  <img class="card-img-top" src="https://i.postimg.cc/JnTm8ySF/virgo.png" alt="Card image cap">
+                                                  </div>
+                                            </div>
+                                              </a>
+
+                                              </div>
+                                              <a href="{{ url_for('capricorn') }}">
+                                                  <div class="card" style="width: 15.5rem; display: inline-block">
+                                                    <img class="card-img-top" src="https://i.postimg.cc/RZrmvxbv/capricorn.png" alt="Card image cap">
+                                                    </div>
+                                                  </div>    
+                                                </a>
+                  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+{% endblock content %}
